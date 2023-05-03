@@ -5,9 +5,9 @@
 dateObj : Date 객체
 */
 const changeTimeK = (dateObj) => {
-    const utc = dateObj.getTime() + (dateObj.getTimezoneOffset() * 60 * 1000)
-    const krTimeDiff = 9 * 60 * 60 * 1000
-    const nowKr = new Date((utc + krTimeDiff))
-  
-    return nowKr
-  }
+  const utc = dateObj.getTime() + (dateObj.getTimezoneOffset() * 60 * 1000)
+  const krTimeDiff = 9 * 60 * 60 * 1000
+  const nowKr = new Date((utc + krTimeDiff))
+
+  return nowKr
+}

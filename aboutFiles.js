@@ -5,10 +5,10 @@
 ssObj : spreadsheet 객체
 */
 const getSheetNameArr = (ssObj) => {
-    let sheets = ssObj.getSheets()
-    let returnArr = []
-    for (sheet of sheets) {
-      returnArr.push(sheet.getSheetName())
-    }
-    return returnArr
+  let sheets = ssObj.getSheets()
+  let returnArr = []
+  for (sheet of sheets) {
+    returnArr.push(sheet.getSheetName())
   }
+  return returnArr
+}
